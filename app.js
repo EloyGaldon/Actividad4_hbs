@@ -26,6 +26,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 // rutas estaticas para carpetas public y node_modules
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/components',express.static(`${__dirname}/public/components`));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);

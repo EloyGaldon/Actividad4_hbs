@@ -3,7 +3,7 @@
 $('#submitLogin').click(function () {
     let usuario=$('#inputUssuario').val();
     let password=$('#inputPassword').val();
-    var paswordEncript2 = hex_md5(password1);
+    var paswordEncript2 = hex_md5(password);
     localStorage.setItem("user",usuario);
     localStorage.setItem("contraseña",paswordEncript2);
 })

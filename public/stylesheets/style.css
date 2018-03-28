@@ -278,28 +278,26 @@ header{
 
 
 #somos{
-  height: 100%;
+  width: 100vw;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/VicenteNadal-W.jpg");
+  background-image: url("../images/somos.jpg");
 }
 #quienes_somos{
   background-color: white;
-  opacity: 0.8;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 40px;
-  font-weight: bold;
   padding: 2%;
-  border: 5px solid #000;
+  border: 1px solid #0D3349;
   border-radius: 10px;
-  text-shadow: 1px 1px white;
 }
 hr{
   width:73%;
   margin-left: 0px;
   position: relative;
-  border-color: red;
+  border-color: yellow;
   margin-top: -4px;
 
 }
@@ -325,7 +323,7 @@ hr{
 }
 
 .wrapper-contacto {
-  font-family: 'Teko', sans-serif;
+ /* font-family: 'Teko', sans-serif;*/
   padding-top: 3%;
   padding-bottom: 3%;
 
@@ -350,30 +348,38 @@ hr{
 /* FIN apartado MAPA */
 
 /* FOOTER */
-.linea{
-  border-bottom: 2px solid #fff;
-}
-#final{
-  background-color:#0B0B3B;
-  color:white;
+footer{
+  color: #fff;
+  background: #0D3349;
+  padding-top: 2%;
   text-align: center;
-
-}
-#ayuda{
-  padding-right: 5vh;
-  padding-top: 3vh;
 }
 
-#suscribete{
-  margin-top: 6vh;
+#informacion{
+  text-align: left;
 }
-.envia{
-  margin-top: 2vh;
+#informacion h5{
+  text-align: center;
+}
+#informacion ul{
+  list-style-type: none;
+}
+#informacion ul li{
+  display: block;
+}
+#informacion ul li a{
+  color:#fff;
+  padding: 0!important;
 }
 #redesSocial2{
+  text-align: center;
+  border-top: 1px solid yellow;
   display: none;
 }
-
+#pie{
+  border-top: 1px solid yellow;
+  padding-top: 2vh;
+}
 
 /* FIN FOOT */
 
@@ -442,12 +448,12 @@ hr{
   background-image: url("../images/otonyo.jpg");
   background-position: center center;
   background-size: cover;
-  padding:3em;
+  padding:10em;
   height: 100vh;
 }
 
 .texto404{
-  padding-top: 30vh;
+  padding-top: 20vh;
   text-align: center;
   color: white;
   text-shadow: 1px 1px 1px black;
@@ -493,14 +499,29 @@ hr{
   .boton-registro{
     margin-top: 0.5em;
   }
-
-
+  #informacion{
+    display: none;
+  }
   #redesSocial{
     display: none;
   }
+
   #redesSocial2{
     display: initial;
   }
+  #redesSocial2 .row .col-12{
+    padding-left: 25vw;
+  }
+
+  #redesSocial2 ul{
+    list-style-type: none;
+  }
+
+  #redesSocial2 ul li{
+    float: left;
+    margin-right: 0.5em;
+  }
+
 
 
   /*DESTINOS - INICIO */
@@ -545,11 +566,14 @@ hr{
   .informacion{
     display: none;
   }
-  #ayuda{
-    padding-right: 2vw;
+  #ayuda, #newsletter{
+    padding-left: 8%;
   }
-  #suscribete{
-    padding-bottom: 2vh;
+  #ayuda h5, #newsletter h5{
+    text-decoration: underline #ffff00;
+  }
+  #redesSocial2 .row .col-12{
+    padding-left: 5vw;
   }
 
 

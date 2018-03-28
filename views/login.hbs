@@ -6,12 +6,12 @@
                 <form>
                     <div class="form-row justify-content-md-center">
                         <div class="form-group col-md-6 col-8">
-                            <input type="text" class="form-control" id="inputUssuario" placeholder="Usuario o eMail">
+                            <input type="text" class="form-control" id="inputUssuario" placeholder="Usuario" required>
                         </div>
                     </div>
                     <div class="form-row justify-content-md-center">
                         <div class="form-group col-md-6">
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
                         </div>
                     </div>
                     <div class="form-row justify-content-md-center">
@@ -20,6 +20,9 @@
                         </div>
                     </div>
                     <a href="#" class="remenberlink" onclick="rememberPassword()">¿ No recuerdas tu contraseña ?</a>
+                    {{#if correcto}}
+                        <p>Se ha registrado correctamente! Ya puedes iniciar sesion.</p>
+                    {{/if}}
                 </form>
             </div>
         </div>

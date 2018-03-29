@@ -4,14 +4,20 @@
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 cont-reg">
                 <h1>Registro de usuario</h1>
                 <a href="login" class="loginlink">¿ Ya estas registrado?</a>
-                <form action="/registrook" method="post" class="formReg">
+                <form action="/registrook" method="post" class="formReg" onsubmit="comprobar(event)">
                     <div class="form-row justify-content-md-center">
                         <div class="form-group col-md-6 col-8">
+                            {{#if errorUsuario}}
+                                <p class="alert alert-danger"><strong>Error !</strong> El usuario ya existe.</p>
+                            {{/if}}
                             <input type="text" class="form-control" name="usuario" id="registUsuario" placeholder="Usuario" required>
                         </div>
                     </div>
                     <div class="form-row justify-content-md-center">
                         <div class="form-group col-md-6 col-8">
+                            {{#if errorEmail}}
+                                <p class="alert alert-danger"><strong>Error !</strong> El email ya existe.</p>
+                            {{/if}}
                             <input type="email" class="form-control" name="email" id="registEmail" placeholder="Email" required>
                         </div>
                     </div>

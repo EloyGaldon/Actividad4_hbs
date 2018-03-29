@@ -419,11 +419,11 @@ footer{
   background-position: center center;
   background-size: cover;
   padding-bottom: 3em;
-  height: 100vh;
+  height: 100%;
 }
 .cont-reg{
   padding: 5vh;
-  margin-top: 20vh;
+  margin-top: 15vh;
   background-color: #00091a;
   opacity:0.8;
   background-size:cover;
@@ -463,7 +463,13 @@ footer{
 
 
 /*fin 404*/
-
+/* mensaje de login correcto*/
+.bienvenido{
+  text-align: center;
+  margin-top: 1px;
+  margin-right: 20vh;
+  margin-left: 20vh;
+}
 
 
 /* ----------------------------*/

@@ -6,9 +6,11 @@ $(function (){
         if ($(this).scrollTop() > 100) {
            //$('#menu').addClass("normal");
             $('#menu').fadeOut(1000);
+            $('#flecha').fadeIn(1000);
         } else {
            // $("#menu").removeClass("normal");
             $('#menu').fadeIn(1000);
+            $('#flecha').fadeOut(1000);
         }
     });
 });

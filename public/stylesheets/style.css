@@ -48,6 +48,14 @@ header{
 .navbar-collapse .navbar-nav li a:hover{
   color: yellow!important;
 }
+/* Flecha subir
+#flecha{
+  position: fixed;
+  margin-right: 5vw;
+  z-index: 1;
+  margin-bottom: 20vh;
+}
+*/
 
 /*
 #menu{
